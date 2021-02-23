@@ -1,0 +1,5 @@
+book-mgr-fe/node_modules
+book-mgr-node/node_modules
+book-mgr-fe/DS_Store
+book-mgr-node/DS_Store
+.DS_Store
