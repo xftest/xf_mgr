@@ -1,0 +1,51 @@
+.auth {
+  height: 100vh;
+  overflow: hidden;
+  .bg {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: url("../../assets/bg.jpg") no-repeat center;
+    background-size: cover;
+    z-index: -1;
+  }
+  .title-info {
+    margin-top: 100px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      height: 60px;
+    }
+    .title {
+      margin-left: 18px;
+      color: #fff;
+      font-size: 30px;
+    }
+  }
+  .form {
+    width: 400px;
+    margin: 32px auto 0;
+
+    ::v-deep {
+      .ant-tabs-tab {
+        color: #fff;
+      }
+      .ant-tabs-tab-active {
+        color: #1890ff;
+      }
+    }
+
+    .item {
+      margin-bottom: 16px;
+
+      button {
+        width: 100%;
+      }
+    }
+  }
+}
