@@ -6,7 +6,6 @@ import router from './router';
 import store from './store';
 
 const app = createApp(App);
-app.config.productionTip = false;
 app
   .use(store)
   .use(router)

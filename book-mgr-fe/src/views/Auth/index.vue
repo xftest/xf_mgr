@@ -9,7 +9,7 @@
       <a-tabs size="large">
         <a-tab-pane key="login" tab="登录">
           <div class="item">
-            <a-input  size="large" placeholder="请输入用户名/身份证号/手机号">
+            <a-input size="large" placeholder="请输入用户名/身份证号/手机号">
               <template #prefix><UserOutlined /></template>
             </a-input>
           </div>
@@ -27,12 +27,20 @@
         </a-tab-pane>
         <a-tab-pane key="register" tab="注册">
           <div class="item">
-            <a-input  size="large" placeholder="请输入用户名/身份证号/手机号">
+            <a-input
+              size="large"
+              placeholder="请输入用户名/身份证号/手机号"
+              v-model:value="regForm.account"
+            >
               <template #prefix><UserOutlined /></template>
             </a-input>
           </div>
           <div class="item">
-             <a-input size="large" placeholder="请输入密码">
+             <a-input
+              size="large"
+              placeholder="请输入密码"
+              v-model:value="regForm.password"
+             >
                <template #prefix><LockOutlined /></template>
              </a-input>
           </div>
@@ -42,7 +50,13 @@
              </a-input>
           </div>
           <div class="item">
-            <a-button size="large" type="primary">注册</a-button>
+            <a-button
+              size="large"
+              type="primary"
+              @click="submit"
+            >
+              注册
+            </a-button>
           </div>
         </a-tab-pane>
       </a-tabs>
@@ -50,7 +64,7 @@
   </div>
 </template>
 
-<script src="./index.js"></script>
+<script src="./index"></script>
 
 <!-- lang 语言预处理器 -->
 <!-- 当style标签具有该scoped属性时，其CSS将仅应用于当前组件的元素 -->
