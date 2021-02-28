@@ -18,7 +18,7 @@ export default defineComponent({
     const submit = () => {
       auth.register(regForm.account, regForm.password);
     };
-
+    // setup 返回值，才能被模版使用
     return {
       regForm,
       submit,
