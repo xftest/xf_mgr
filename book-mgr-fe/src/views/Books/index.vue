@@ -15,6 +15,7 @@
       <a-table :columns="columns" :data-source="data"></a-table>
 
     </a-card>
+    <add-one></add-one>
   </div>
 </template>
 

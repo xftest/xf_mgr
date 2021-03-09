@@ -1,4 +1,5 @@
 import { defineComponent } from 'vue';
+import AddOne from './AddOne/index.vue';
 
 
 export default defineComponent({
@@ -17,6 +18,9 @@ export default defineComponent({
       data,
       columns,
     }
+  },
+  components:{
+    AddOne,
   },
 
 })
