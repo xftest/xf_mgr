@@ -1,0 +1,68 @@
+.basic-layout {
+  .app-header {
+    height: 64px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 16px;
+    width: 100%;
+    z-index: 1;
+    box-shadow: 0 2px 8px #f0f1f2;
+
+    .left {
+      display: flex;
+      align-items: center;
+      img {
+        height: 50px;
+        margin-right: 16px;
+      }
+      .title {
+        font-size: 18px;
+        color: #333;
+      }
+    }
+
+    .right {
+      display: flex;
+      align-items: center;
+      .hello-msg {
+      }
+      .logout {
+        width: 80px;
+        text-align: center;
+        height: 64px;
+        line-height: 64px;
+        cursor: pointer;
+        margin-left: 16px;
+
+        &:hover {
+          background: #eee;
+        }
+      }
+    }
+  }
+
+  .app-header-placeholver {
+    width: 100%;
+    height: 64px;
+  }
+  .app-content {
+    display: flex;
+    .left {
+      width: 256px;
+      background: #efefef;
+      position: fixed;
+      top: 64px; //从顶部64px 处开始
+      bottom: 0;
+    }
+    .right {
+      flex: 1; // 把剩余的空间都占满
+      padding: 24px;
+      margin-left: 256px; //因为left 脱离文档流，不占位置
+    }
+  }
+}

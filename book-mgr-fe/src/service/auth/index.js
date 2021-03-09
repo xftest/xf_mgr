@@ -4,11 +4,12 @@ import axios from 'axios';
  * ajax 基于XMLhttpRequest
  */
 
-export const register = (account, password) => {
+export const register = (account, password,inviteCode) => {
   // return 一个promise回去， 接口就可以操作.then了。
   return axios.post('http://localhost:3000/auth/register', {
     account,
     password,
+    inviteCode,
   });
 };
 

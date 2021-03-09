@@ -1,5 +1,6 @@
  const mongoose = require('mongoose');
  require('./Schemas/User'); // requirey一个文件，就会去执行一个文件,modal 就会被执行了。
+ require('./Schemas/InviteCode'); // requirey一个文件，就会去执行一个文件,modal 就会被执行了。
 // 1.给哪个数据库
 // 2.哪个集合
 // 3.添加什么格式的文档
